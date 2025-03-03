@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.top-20{
+    top: 20% !important;
+}
+
+.custom-max-vh-85{
+    max-height: 85vh;
+}
+
+/* font sizes */
+.fs-7 {
+    font-size: 0.75rem; /* Adjust as needed */
+  }
+
+/* colors and bg */
+.orange-color{
+    color: #FF9A00;
+}
+.redish-color{
+    color: #F20000;
+}
+.redish-bg{
+    background-color: #F20000;
+}
+
+/* navbar */
+.nav-search-icon,.nav-search-box, .input-group .form-control:focus {
+    box-shadow: none; 
+    outline: none; 
+    border: 1px solid #ced4da;
+}
+.nav-cart{
+    color: #7393f2;
+    font-size: 30px;
+}
+.nav-cart-count-bg{
+    background-color: #7393f2;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+/* lower navbar */
+.lower-nav-bg{
+    background-color: #F85506;
+}
+
+.lower-nav li{
+    list-style-type: none !important;
+}
+
+/* products */
+.product-card-one{
+    height: 308px;
+    width: 185px;
+    border: 2px solid #F20000;
+    padding: 5px;
+}
+.product-card-one img{
+    height: 196px;
+    width: 100%;
+}
+.product-card-one button{
+    background-color: #F20000;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 6px;
+}
+
+
+/* responsive css */
+@media (min-width: 992px) {
+    .nav-search-box {
+        width: 320px !important; 
+    }
+}
