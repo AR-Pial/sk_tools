@@ -127,17 +127,100 @@
           <!-- Offcanvas for small screen ends -->
       
           <!-- Shopping Cart Icon with Item Count -->
-          <div class="ms-lg-auto me-2 me-lg-0 position-relative order-3 order-lg-4">
+          <div class="ms-lg-auto me-2 me-lg-0 position-relative order-3 order-lg-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <i class="ri-shopping-cart-line nav-cart" style="font-size: 24px;"></i>
             <span id="cart-count" class="position-absolute top-20 start-100 translate-middle badge rounded-pill nav-cart-count-bg">
               0
             </span>
           </div>
+          <!-- <button class="btn btn-primary order-3 order-lg-4" >Toggle right offcanvas</button> -->
+
         </div>
       </nav>
       <!-- Top navbar ends -->
     </div>
     <!-- header ends -->
+
+    <!-- cart offcanvas starts-->
+    <div class="offcanvas offcanvas-end width-lg-50 p-3 p-lg-5" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header border-bottom border-2 px-0">
+        <h3 id="offcanvasRightLabel fw-bold">Cart review</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body py-4">
+        <!-- items starts -->
+        <div class="pt-3 border-bottom border-2">
+            <div class="d-flex w-100 text-dark mb-5">
+              <div class="col-3 position-relative d-block">
+                <img src="../assests/images/product_images/p1.jpg" width="100" class="rounded shadow img-fluid" alt="Product">
+                <button class="btn btn-danger btn-sm  px-2 position-absolute top-0 start-0 translate-middle rounded-circle p-1">
+                    <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="col-9 row ps-2 ps-lg-0">
+                <div class="col-12 col-lg-8 d-flex flex-column">
+                  <a href="#" class="fw-bold text-truncate">MaAnt Full Metal Swingarm JK-01( Only Arm) free Default</a>
+                  <span>৳5,000</span>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-lg-center align-items-center my-1 my-lg-0 gap-2">
+                  <div>
+                    <button class="btn btn-light btn-sm rounded-circle border border-1 fs-lg-5">
+                      -
+                    </button>
+                  </div>
+                  <span class="fs-5">1</span>
+                  <div>
+                    <button class="btn btn-light btn-sm rounded-circle border border-1 fs-lg-5">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex w-100 text-dark mb-5">
+              <div class="col-3 position-relative d-block">
+                <img src="../assests/images/product_images/p1.jpg" width="100" class="rounded shadow img-fluid" alt="Product">
+                <button class="btn btn-danger btn-sm  px-2 position-absolute top-0 start-0 translate-middle rounded-circle p-1">
+                    <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="col-9 row ps-2 ps-lg-0">
+                <div class="col-12 col-lg-8 d-flex flex-column">
+                  <a href="#" class="fw-bold text-truncate">MaAnt Full Metal Swingarm JK-01( Only Arm) free Default</a>
+                  <span>৳5,000</span>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-lg-center align-items-center my-1 my-lg-0 gap-2">
+                  <div>
+                    <button class="btn btn-light btn-sm rounded-circle border border-1 fs-lg-5">
+                      -
+                    </button>
+                  </div>
+                  <span class="fs-5">1</span>
+                  <div>
+                    <button class="btn btn-light btn-sm rounded-circle border border-1 fs-lg-5">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- items ends -->
+        <div class="py-3">
+            <div class="fs-5 d-flex justify-content-between">
+              <strong>Subtotal:</strong>
+              <strong>5200</strong>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-between gap-3 py-3 py-lg-4">
+              <a class="btn btn-danger fs-5 p-3 fw-bold">View Cart</a>
+              <a class="btn btn-primary fs-5 p-3 fw-bold">Checkout</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- cart offcanvas ends-->
+
     <!-- Lower navbar - large screen starts -->
     <div class="lower-nav-bg px-5 shadow-lg d-none d-lg-block">
       <div class="lower-nav d-flex flex-wrap justify-content-center gap-4 text-white px-lg-2 py-lg-3">

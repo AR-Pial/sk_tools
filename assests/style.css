@@ -8,6 +8,23 @@ a{
     text-decoration: none !important;
 }
 
+::-webkit-scrollbar {
+    width: 6px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aaa; /* Scrollbar color */
+    border-radius: 3px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Color on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background */
+}
+
 .top-20{
     top: 20% !important;
 }
@@ -118,5 +135,8 @@ footer ul li{
 @media (min-width: 992px) {
     .nav-search-box {
         width: 320px !important; 
+    }
+    .width-lg-50{
+        width: 50% !important;
     }
 }
