@@ -12,8 +12,8 @@ a{
     top: 20% !important;
 }
 
-.custom-max-vh-85{
-    max-height: 85vh;
+.custom-max-vh-90{
+    max-height: 90vh;
 }
 
 /* font sizes */
@@ -51,6 +51,14 @@ a{
     outline: none;
 }
 
+.nav-search{
+    width: 100%;
+}
+
+.nav-search-box{
+    flex-grow: 1;
+}
+
 /* lower navbar */
 .lower-nav-bg{
     background-color: #F85506;
@@ -77,6 +85,32 @@ a{
     border: none;
     width: 100%;
     padding: 6px;
+}
+
+/* footer  */
+.upper-footer-bg{
+    background-color: #606060;
+}
+footer ul li{
+    list-style-type: none !important;
+    padding-bottom: 10px;
+}
+.lower-footer-bg{
+    background-color: #000000;
+}
+.footer-social-link {
+    width: 40px; /* Ensure equal width and height */
+    height: 40px;
+    display: flex; /* Center the icon inside */
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Perfect circle */
+    background-color: transparent; /* Default background */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-social-link:hover {
+    background-color: #7393f2;
 }
 
 

@@ -16,18 +16,18 @@
   </head>
   <body>
     <!-- header starts -->
-    <div>
+    <div class="sticky-top">
       <!-- Top navbar starts -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary px-lg-5">
         <div class="container-fluid d-flex justify-content-between">
           <!-- Logo -->
           <a class="navbar-brand order-2 mx-auto ms-lg-0" href="#">
-            <img src="../assests/images/logo.jpg" alt="Logo" width="120" class="d-inline-block align-text-top">
+            <img src="../assests/images/logo.jpg" alt="Logo" width="100" class="d-inline-block align-text-top">
           </a>
 
-          <div class="d-none d-lg-flex order-3">
+          <div class="d-lg-flex order-5 nav-search order-lg-3">
             <!-- Search Form -->
-            <form class="d-flex mx-lg-5 mb-3" role="search">
+            <form class="d-flex mx-lg-5 pt-2 pt-lg-0" role="search">
               <div class="input-group">
                 <a href="#" class="input-group-text bg-white border-end-0 nav-search-icon">
                   <i class="fas fa-search text-muted"></i>
@@ -37,7 +37,7 @@
             </form>
     
             <!-- Navigation Links -->
-            <ul class="navbar-nav ">
+            <ul class="d-none d-lg-flex navbar-nav ">
               <li class="nav-item">
                 <a class="nav-link text-dark" href="#">Home</a>
               </li>
@@ -52,49 +52,82 @@
               </li>
             </ul>
           </div>
-      
-          <!-- Offcanvas Toggle Button -->
-          <button class="navbar-toggler order-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars-staggered" style="font-size: 30px;"></i>
-          </button>
-      
-          <!-- Offcanvas Menu -->
-          <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          
+          <!-- Offcanvas for small screen starts -->
+            <!-- Offcanvas Toggle Button -->
+            <button class="navbar-toggler order-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars-staggered" style="font-size: 30px;"></i>
+            </button>
+        
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assests/images/logo.jpg" alt="" width="75"></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">     
+                <!-- Navigation Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"></path>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"></path>
+                      </svg>
+                      All Products
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"></path>
+                      </svg>
+                      Others Tools/অন্যান্য টুলস
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"></path>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"></path>
+                      </svg>
+                      Pcb Stan/Motherboard Fixer
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"></path>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"></path>
+                      </svg>
+                      Microscope
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"></path>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"></path>
+                      </svg>
+                      Stencils/আইসি প্লেট
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"></path>
+                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"></path>
+                      </svg>
+                      All Type Reball & Flux Paste
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="offcanvas-body">
-              <!-- Search Form -->
-              <form class="d-flex mx-lg-5 mb-3" role="search">
-                <div class="input-group">
-                  <a href="#" class="input-group-text bg-white border-end-0 nav-search-icon">
-                    <i class="fas fa-search text-muted"></i>
-                  </a>
-                  <input class="form-control border-start-0 nav-search-box" type="search" placeholder="Looking for something?" aria-label="Search">
-                </div>
-              </form>
-      
-              <!-- Navigation Links -->
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">All Category</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">All Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">All Offers</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <!-- Offcanvas for small screen ends -->
       
           <!-- Shopping Cart Icon with Item Count -->
-          <div class="ms-lg-auto position-relative order-3 order-lg-4">
+          <div class="ms-lg-auto me-2 me-lg-0 position-relative order-3 order-lg-4">
             <i class="ri-shopping-cart-line nav-cart" style="font-size: 24px;"></i>
             <span id="cart-count" class="position-absolute top-20 start-100 translate-middle badge rounded-pill nav-cart-count-bg">
               0
@@ -103,68 +136,70 @@
         </div>
       </nav>
       <!-- Top navbar ends -->
-      <!-- Lower navbar - large screen starts -->
-      <div class="lower-nav-bg px-5 shadow-lg">
-        <div class="lower-nav d-flex flex-wrap justify-content-center gap-4 text-white px-lg-2 py-lg-3">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Others Tools/অন্যান্য টুলস
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pcb Stan/Motherboard Fixer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Microscope</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Stencils/আইসি প্লেট</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">All Type Reball & Flux Paste</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Iron/তাতাল</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pcb Stan/Motherboard Fixer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Microscope</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Stencils/আইসি প্লেট</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">All Type Reball & Flux Paste</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Iron/তাতাল</a>
-          </li>
-        </div>
-      </div>
-      <!-- Lower navbar - large screen ends -->
     </div>
     <!-- header ends -->
+    <!-- Lower navbar - large screen starts -->
+    <div class="lower-nav-bg px-5 shadow-lg d-none d-lg-block">
+      <div class="lower-nav d-flex flex-wrap justify-content-center gap-4 text-white px-lg-2 py-lg-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Others Tools/অন্যান্য টুলস
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pcb Stan/Motherboard Fixer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Microscope</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Stencils/আইসি প্লেট</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">All Type Reball & Flux Paste</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Iron/তাতাল</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pcb Stan/Motherboard Fixer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Microscope</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Stencils/আইসি প্লেট</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">All Type Reball & Flux Paste</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Iron/তাতাল</a>
+        </li>
+      </div>
+    </div>
+    <!-- Lower navbar - large screen ends -->
+
     <!-- main section starts -->
     <main class="p-2 p-lg-3 ">
+
       <!-- carousel starts -->
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner rounded">
           <div class="carousel-item active">
-            <img src="../assests/images/carousel_images/c1.jpeg" class="d-block w-100 custom-max-vh-85" alt="...">
+            <img src="../assests/images/carousel_images/c1.jpeg" class="d-block w-100 custom-max-vh-90" alt="...">
           </div>
           <div class="carousel-item rounded">
-            <img src="../assests/images/carousel_images/c2.jpeg" class="d-block w-100 custom-max-vh-85" alt="...">
+            <img src="../assests/images/carousel_images/c2.jpeg" class="d-block w-100 custom-max-vh-90" alt="...">
           </div>
           <div class="carousel-item rounded">
-            <img src="../assests/images/carousel_images/c3.jpeg" class="d-block w-100 custom-max-vh-85" alt="...">
+            <img src="../assests/images/carousel_images/c3.jpeg" class="d-block w-100 custom-max-vh-90" alt="...">
           </div>
         </div>
       </div>
@@ -538,13 +573,84 @@
       <div>
         <img class="w-100 rounded py-3 mt-3" src="../assests/images/banner1.png" alt="">
         <div class="py-3">
-          <h3 class="class">New Arivals</h3>
+          <h3 class="class">Popular Brand</h3>
         </div> 
       </div>
       <!-- Banner  ends -->
 
     </main>
     <!-- main section ends -->
+
+    <!-- footer starts -->
+    <footer class="">
+        <!-- upper footer starts -->
+        <div class="upper-footer-bg row m-0 p-3 p-lg-5 text-white border-bottom border-2 border-white w-100">
+            <div class="col-12 col-lg-3">
+              <h4>Call us (Everyday) 01912201xxx</h4>
+              <div>
+                <img src="../assests/images/icons/landmark.png" alt="" width="20">
+                <p class="m-0"> Shop No 252, 3rd Floor/4 Floor Sundarban Square Super Market, Gulistan, Dhaka, Bangladesh. </p>
+              </div>
+              <div class="py-1">
+                <img class="" src="../assests/images/icons/mail.png" alt="" width="20">
+                <p class="m-0">
+                  <strong>Email  Address:</strong>
+                  <a class="text-white" href="mailto:demoemail@gmail.com"><span>demoemail@gmail.com</span> </a>
+                </p>
+                <p class="m-0"><strong>Call us:</strong>  01912201xxx</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mt-2 mt-lg-0">
+              <h4>Manual Payment Option</h4>
+              <div>
+                <img src="../assests/images/icons/bkash.png" alt="" width="20">
+                <p class="m-0"><strong>Bkash Send Money:</strong>  01912201xxx</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-3 mt-2 mt-lg-0">
+              <h4>Best Categories</h4>
+              <ul class="">
+                <li><a href="#" class="text-white"> Others Tools/অন্যান্য টুলস</a></li>
+                <li><a href="#" class="text-white"> Pcb Stan/Motherboard Fixer</a></li>
+                <li><a href="#" class="text-white"> Microscope</a></li>
+                <li><a href="#" class="text-white"> Stencils/আইসি প্লেট</a></li>
+                <li><a href="#" class="text-white"> Others Tools/অন্যান্য টুলস</a></li>
+                <li><a href="#" class="text-white"> Pcb Stan/Motherboard Fixer</a></li>
+                <li><a href="#" class="text-white"> Microscope</a></li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-lg-3">
+              <h4>Cutomer service</h4>
+              <ul class="">
+                <li><a href="#" class="text-white"> About us</a></li>
+                <li><a href="#" class="text-white"> Privacy Policy</a></li>
+                <li><a href="#" class="text-white"> Terms & Conditions</a></li>
+                <li><a href="#" class="text-white"> Return policy</a></li>
+              </ul>
+            </div>
+        </div>
+        <!-- upper footer ends -->
+        <!-- lower footer starts -->
+        <div class="lower-footer-bg d-flex flex-column gap-3 flex-lg-row justify-content-center justify-content-lg-between p-3 p-lg-4">
+          <div class="text-center">
+              <img src="../assests/images/logo.jpg" alt="" width="100">
+          </div>
+          <div class="text-white text-center">
+            sktoolsbd.com © 2023. All Rights reserved. <strong>Website Developed By Microsoft</strong> 
+          </div>
+          <div class="d-flex gap-1 justify-content-center">
+              <a href="#" class="footer-social-link"><i class="fab fa-facebook-f text-white"></i></a>
+              <a href="#" class="footer-social-link"><i class="fab fa-instagram text-white"></i></a>
+              <a href="#" class="footer-social-link"><i class="fab fa-youtube text-white"></i></a>
+          </div>
+        </div>
+        <!-- lower footer ends -->
+    </footer>
+    <!-- footer ends -->
+
     <!-- bootstrap@5.3.3 js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- custom js -->
