@@ -36,7 +36,8 @@ a{
 /* font sizes */
 .fs-7 {
     font-size: 0.75rem; /* Adjust as needed */
-  }
+}
+
 
 /* colors and bg */
 .orange-color{
@@ -47,6 +48,10 @@ a{
 }
 .redish-bg{
     background-color: #F20000;
+}
+
+.light-cream-bg{
+ background-color: #F9F3F0;
 }
 
 /* navbar */
@@ -102,6 +107,11 @@ a{
     border: none;
     width: 100%;
     padding: 6px;
+}
+
+/* cart */
+.cart-subtotal input[type="radio"]:checked {
+    background-color: #F20000;  /* New color when selected */
 }
 
 /* footer  */
