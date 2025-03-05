@@ -8,8 +8,19 @@ a{
     text-decoration: none !important;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+}
+
+h1, h2, h3, h4, h5, h6, .lower-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+}
+
+
 ::-webkit-scrollbar {
-    width: 6px; /* Adjust scrollbar width */
+    width: 6px; 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -119,10 +130,27 @@ input[type="radio"]:checked {
     border: 2px solid #F20000;
     padding: 5px;
 }
+
 .product-card-one img{
     height: 196px;
     width: 100%;
 }
+
+.product-card-two{
+    height: 308px;
+    width: 278px;
+    border: 2px solid #F20000;
+    padding: 5px;
+}
+
+.product-card-two img{
+    height: 196px;
+    width: 100%;
+}
+.category-card{
+    width: 185px;
+}
+
 .product-order-btn{
     background-color: #F20000 !important;
     color: white;
