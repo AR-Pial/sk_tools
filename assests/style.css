@@ -33,11 +33,14 @@ a{
     max-height: 90vh;
 }
 
+input[type="radio"]:checked {
+    background-color: #F20000;  
+}
+
 /* font sizes */
 .fs-7 {
     font-size: 0.75rem; /* Adjust as needed */
 }
-
 
 /* colors and bg */
 .orange-color{
@@ -48,6 +51,9 @@ a{
 }
 .redish-bg{
     background-color: #F20000;
+}
+.text-redish{
+    color: #F20000;
 }
 
 .light-cream-bg{
@@ -109,10 +115,8 @@ a{
     padding: 6px;
 }
 
-/* cart */
-.cart-subtotal input[type="radio"]:checked {
-    background-color: #F20000;  /* New color when selected */
-}
+/* cart and checkout */
+
 
 /* footer  */
 .upper-footer-bg{
