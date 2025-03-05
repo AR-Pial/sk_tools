@@ -29,6 +29,10 @@ a{
     top: 20% !important;
 }
 
+.top-75{
+    top: 75% !important;
+}
+
 .custom-max-vh-90{
     max-height: 90vh;
 }
@@ -115,8 +119,79 @@ input[type="radio"]:checked {
     padding: 6px;
 }
 
-/* cart and checkout */
+/* inputs and forms starts */
+.input-container {
+    position: relative;
+    width: 100%;
+}
 
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FF1818;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    appearance: none; 
+}
+
+.input-container label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: white;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Style the select dropdown */
+.select-container {
+    position: relative;
+}
+
+.select-container select {
+    cursor: pointer;
+    padding-right: 30px; /* Space for dropdown arrow */
+}
+
+/* Custom dropdown arrow ONLY for select */
+.select-container::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+}
+/* inputs and forms ends */
+
+/* scroll to top */
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 6%;
+    right: 4%;
+    background-color: #C2050B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* On hover, move the button upwards */
+.scrollToTopBtn:hover {
+    transform: translateY(-5px); /* Moves the button up by 5px */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 /* footer  */
 .upper-footer-bg{
@@ -152,5 +227,9 @@ footer ul li{
     }
     .width-lg-50{
         width: 50% !important;
+    }
+    .scrollToTopBtn{
+        bottom: 13%;
+        right: 3%;
     }
 }
