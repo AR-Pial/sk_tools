@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <!-- remix icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="../assests/style.css">
   </head>
@@ -270,8 +272,265 @@
     <!-- Lower navbar - large screen ends -->
 
     <!-- main section starts -->
-    <main class="p-2 p-lg-3 ">
+    <main class="">
+      <!-- product info section starts -->
+      <div class="d-flex flex-column flex-lg-row gap-3 p-2 p-lg-5">
+        <!-- Product Image Section -->
+        <div class="col-12 col-lg-6 row mx-auto">
+            <!-- Thumbnail Images -->
+            <div class="col-2">
+                <div class="row gap-1">
+                    <div class="col-12 mb-3 redish-border rounded">
+                        <img src="../assests/images/product_images/p1.jpg" alt="Thumbnail 1" class="img-fluid" style="cursor: pointer;" onclick="changeImage('../assests/images/product_images/p1.jpg')">
+                    </div>
+                    <div class="col-12 mb-3 redish-border rounded">
+                        <img src="../assests/images/product_images/p2.png" alt="Thumbnail 2" class="img-fluid" style="cursor: pointer;" onclick="changeImage('../assests/images/product_images/p2.png')">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Image Box -->
+            <div class="col-10">
+                <a href="../assests/images/product_images/p1.jpg" data-lightbox="product-gallery" data-title="Product Image 1" class="d-flex justify-content-center redish-border">
+                    <img id="mainImage" src="../assests/images/product_images/p1.jpg" alt="Main Product Image" class="img-fluid w-100" />
+                </a>
+            </div>
+        </div>
 
+        <!-- Product Information Section -->
+        <div class="col-12 col-lg-6 row">
+            <div class="col-12">
+                <h3 class="fw-bolder">MaAnt KJ1,KJ2,KJ3 Power Boot Cables (Android+Iphone)</h3>
+                <p class="text-redish fs-3 fw-bolder">৳ 1800.00</p>
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div>
+                    <a href="#" class="btn btn-light btn-sm rounded-circle border border-1 fs-lg-5">
+                      -
+                    </a>
+                  </div>
+                  <span class="fs-5">1</span>
+                  <div>
+                    <a href="#" class="btn btn-light btn-sm rounded-circle border border-1 fs-lg-5">
+                      +
+                    </a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <div class="my-2 col-12 col-lg-6">
+                      <a href="#" class="product-order-btn text-center rounded p-2 px-5 d-block">অর্ডার করুন</a>
+                  </div>
+                  <div class="my-2  col-12 col-lg-6">
+                      <a href="#" class="text-white bg-danger text-center rounded p-2 px-5 d-block"><i class="fas fa-shopping-cart"></i> কার্টে যোগ করুন</a>
+                  </div>
+                  <div class="my-2  col-12 col-lg-6">
+                      <a href="#" class="text-white bg-success text-center rounded p-2 px-5 d-block">
+                          <i class="fab fa-whatsapp" style="color: #ffffff;"></i> হোয়াটসঅ্যাপ অর্ডার
+                      </a>
+                  </div>
+                  <div class="my-2  col-12 col-lg-6">
+                      <a href="#" class="text-white bg-success text-warning rounded p-2 px-5 d-block">01777xxxxxx</a>
+                  </div>
+                  <div class="my-2  col-12 col-lg-6">
+                    <a href="#" class="text-white bg-danger text-center rounded p-2 px-5 d-block">01777xxxxxx</a>
+                  </div>
+              </div>
+              
+
+            </div>
+        </div>
+      </div>
+      <!-- product info section ends -->
+
+      <!-- product description section starts -->
+      <div class="description-bg p-4">
+        <h4>Short Description</h4>
+        <p></p>
+      </div>
+      <!-- product description section ends -->
+      
+      <!-- Our products starts -->
+      <div class="p-2 px-lg-3 my-3">
+        <div class="d-flex justify-content-between ">
+            <p><i class="fas fa-shopping-basket soft-blue-bg p-2 rounded-circle text-white"></i><span class="orange-color fw-bold"> Our Products</span></p>
+            <a href="#" class="orange-color fw-bold">View All >></a>
+        </div>
+        <div>
+          <h4>You Might Also Like</h4>
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 gap-lg-4 py-2">
+            <!-- product cards -->
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+            
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+            <div  class="product-card-one d-flex flex-column">
+              <a href="../pages/product_details.html">
+                <img src="../assests/images/product_images/p1.jpg" alt="">
+                <div class="py-2">
+                  <h6 class="text-truncate mb-0 pb-0">MaAnt Up78 Syri</h6>
+                  <span class="redish-color fs-6 fw-bold">৳ 220</span>
+                </div>
+              </a>
+
+              <a href="#" class="mt-auto product-order-btn w-100 text-center">
+                <i class="fas fa-shopping-cart"></i> <span class="me-2">অর্ডার করুন </span>
+              </a>
+            </div>
+
+        </div>
+        </div>
+      </div>
+      <!-- Our products ends -->
     </main>
     <!-- main section ends -->
 
@@ -347,7 +606,15 @@
 
     <!-- bootstrap@5.3.3 js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Lightbox2 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
     <!-- custom js -->
-     <script src="../assests/scripts.js"></script>
+    <script src="../assests/scripts.js"></script>
+    <!-- JavaScript for changing the image -->
+    <script>
+      function changeImage(image) {
+          document.getElementById('mainImage').src = image;
+      }
+    </script>
   </body>
 </html>
